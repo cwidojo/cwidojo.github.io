@@ -1,0 +1,925 @@
+@font-face {
+  font-family: "zurich";
+  src: url("../fonts/zurich-xcn-bt-webfont.eot");
+  src: url("../fonts/zurich-xcn-bt-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/zurich-xcn-bt-webfont.woff") format("woff"),
+       url("../fonts/zurich-xcn-bt-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.site-page, .nav-list, .header-01, .header-02, .header-04, .field {
+  margin: 0;
+}
+
+.field, .nav-list {
+  padding: 0;
+  }
+
+.nav-list {
+  list-style: none;
+}
+
+::selection {
+  color: inherit;
+  background: transparent;
+}
+
+::-webkit-selection {
+  color: inherit;
+  background: transparent;  
+}
+
+::-moz-selection {
+  color: inherit;
+  background: transparent;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor-email {
+  color: #23aadc;
+}
+
+.anchor-email:hover {
+  text-decoration: underline;
+}
+
+.field {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.paragraph {
+  margin: 0 0 15px;
+}
+
+.dinline-block {
+  display: inline-block;
+}
+
+.dblock {
+  display: block;
+}
+
+.dtable, .table-cell {
+  width: 100%;
+  height: 100%;
+}
+
+.dtable {
+  display: table;
+}
+
+.dtable-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden-text {
+  text-align: left;
+  text-indent: -999px;
+  overflow: hidden;
+  color: transparent;
+}
+
+.section {
+  min-height: 100%;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.html-container, .site-page {
+  min-width: 320px;
+  height: 100%;
+}
+
+.html-container {
+  overflow: hidden;
+  background: url("../images/principal-image.png") no-repeat center fixed;
+  background-size: 100% auto;
+}
+
+.site-page {
+  font: normal 12px/16px Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+  overflow: auto;
+}
+
+.main-header {
+  width: 100%;
+  padding: 15px 0;
+  opacity: 0;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  z-index: 90;
+  background: rgba(255,255,255,0.9);
+
+  -webkit-transition: all 0.4s ease-in 1.2s;
+  -moz-transition: all 0.4s ease-in 1.2s;
+  -ms-transition: all 0.4s ease-in 1.2s;
+  -o-transition: all 0.4s ease-in 1.2s;
+  transition: all 0.4s ease-in 1.2s;
+}
+
+.cwi-logo {
+  width: 122px;
+  height: 33px;
+  background: url("../images/cwi-software.png") no-repeat center top;
+}
+
+.main-nav {
+  margin-right: -15px;
+}
+
+.main-nav .anchor {
+  padding: 10px 15px;
+  font-family: "zurich";
+  font-size: 18px;
+  line-height: 18px;
+  color: #2d2d2d;
+}
+
+.main-nav .anchor:hover, .main-nav .anchor.active {
+  color: #ffa800;
+}
+
+.main {
+  height: 100%;
+}
+
+.dojo-container {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-text-container {
+  position: relative;
+  z-index: 12;
+}
+
+.text-first-line {
+  width: 100%; 
+  height: 160px; 
+  padding-top: 70px;
+}
+
+.text-second-line {
+  width: 100%; 
+  height: 180px;
+}
+
+.dojo-line {
+  width: 460px;
+  height: 460px;
+  margin-top: -230px;
+  border-width: 2px;
+  border-radius: 24px;
+  border-style: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -moz-transform: rotate(135deg);
+  -moz-transform-origin: center;  
+  -webkit-transform: rotate(135deg);
+  -webkit-transform-origin: center;
+  -ms-transform: rotate(135deg);
+  -ms-transform-origin: center;
+  -o-transform: rotate(135deg);
+  -o-transform-origin: center;
+  transform: rotate(135deg);
+  transform-origin: center;
+
+  -webkit-transition: all 0.2s ease-in 0.4s;
+  -moz-transition: all 0.2s ease-in 0.4s;
+  -ms-transition: all 0.2s ease-in 0.4s;
+  -o-transition: all 0.2s ease-in 0.4s;
+  transition: all 0.2s ease-in 0.4s;
+}
+
+.dojo-white-line {
+  margin-left: -230px;
+  border-color: #fff;
+  opacity: 0;
+}
+
+.dojo-orange-line {
+  margin-left: -230px;
+  border-color: #b67800;
+  opacity: 0;
+}
+
+.header-01 {
+  font-family: "zurich";
+  font-size: 160px;
+  line-height: 160px;
+  margin-top: -20px;
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.orange-text {
+  color: #ffa800;
+}
+
+.martial-arts-icon {
+  width: 67px;
+  height: 51px;
+  margin-top: -32px;
+  background-image: url("../images/martial-arts-logo.png");
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in 0.6s;
+  -moz-transition: all 0.2s ease-in 0.6s;
+  -ms-transition: all 0.2s ease-in 0.6s;
+  -o-transition: all 0.2s ease-in 0.6s;
+  transition: all 0.2s ease-in 0.6s;
+}
+
+.double-border-container {
+  width: 348px;
+  margin: 8px 0 20px;
+}
+
+.double-border {
+  width: 0;
+  height: 5px;
+  border-top: 2px solid #2d2d2d;
+  border-bottom: 2px solid #2d2d2d;
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in 1s;
+  -moz-transition: all 0.2s ease-in 1s;
+  -ms-transition: all 0.2s ease-in 1s;
+  -o-transition: all 0.2s ease-in 1s;
+  transition: all 0.2s ease-in 1s;
+}
+
+.header-caption {
+  font-family: "zurich";
+  font-size: 33px;
+  line-height: 33px;
+  margin-top: -15px;
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in 0.8s;
+  -moz-transition: all 0.2s ease-in 0.8s;
+  -ms-transition: all 0.2s ease-in 0.8s;
+  -o-transition: all 0.2s ease-in 0.8s;
+  transition: all 0.2s ease-in 0.8s;
+}
+
+.icon-header-arrow {
+  width: 73px;
+  height: 73px;
+  margin: 0;
+  opacity: 0;
+  background-image: url("../images/header-arrow.png");
+
+  -webkit-transition: all 0.2s ease-in 1.2s;
+  -moz-transition: all 0.2s ease-in 1.2s;
+  -ms-transition: all 0.2s ease-in 1.2s;
+  -o-transition: all 0.2s ease-in 1.2s;
+  transition: all 0.2s ease-in 1.2s;
+}
+
+.init-animate-header .main-header {
+  opacity: 1;
+  top: 0;
+}
+
+.init-animate-header .dojo-white-line {
+  margin-left: -220px;
+  opacity: 0.9;
+}
+
+.init-animate-header .dojo-orange-line {
+  margin-left: -240px;
+  opacity: 0.3;
+}
+
+.init-animate-header .header-01 {
+  margin: 0;
+  opacity: 1;
+}
+
+.init-animate-header .martial-arts-icon {
+  opacity: 1;
+  margin: -22px;
+}
+
+.init-animate-header .double-border {
+  width: 130px;
+  opacity: 1;
+}
+
+.init-animate-header .header-caption {
+  margin: 0;
+  opacity: 1;
+}
+
+.init-animate-header .icon-header-arrow {
+  margin: 30px 0 -80px;
+  opacity: 1;
+}
+
+/*
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+*/
+
+.what-is {
+  background: #f5f5f5 url("../images/temple-opacity.png") no-repeat right top;
+}
+
+.section-header {
+  padding: 30px 0;
+}
+
+.header-02 {
+  padding-left: 10px;
+  border-left: 5px solid #ffa800;
+  font-family: "zurich";
+  font-size: 60px;
+  line-height: 45px;
+}
+
+.header-03 {
+  padding-top: 20px;
+  margin: 0 0 15px;
+  font-family: "zurich";
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.paragraph {
+  max-width: 680px;
+  margin: 0 0 15px;
+}
+
+.bulets-list {
+  width: 75%;
+}
+
+.bulets-list-item {
+  width: 50%;
+  padding: 5px 10px 5px 20px;
+  background: url("../images/bulet-list-icon.png") no-repeat left center;
+}
+
+.row-col-2 {
+  width: 80%;
+}
+
+.row-col-2 .col-2 {
+  width: 50%;
+}
+
+.row-col-2 .col-2:first-child {
+  padding-right: 10px;
+}
+
+.row-col-2 .col-2:first-child + .col-2 {
+  padding-left: 10px;
+}
+
+.black-grass-container {
+  height: 210px;
+  position: relative;
+  background: url("../images/black-grass.png") repeat-x left bottom;
+}
+
+.black-splash-01 {
+  width: 474px;
+  height: 325px;
+  position: absolute;
+  left: 0;
+  bottom: -282px;
+  background: url("../images/black-splash-01.png") no-repeat center;
+}
+
+.black-splash-02 {
+  width: 153px;
+  height: 118px;
+  margin-left: -76px;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  background: url("../images/black-splash-02.png") no-repeat center; 
+}
+
+.black-splash-03 {
+  width: 112px;
+  height: 161px;
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  background: url("../images/black-splash-03.png") no-repeat center; 
+}
+
+.black-splash-04 {
+  width: 124px;
+  height: 198px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  background: url("../images/black-splash-04.png") no-repeat center; 
+}
+
+.samurai-01 {
+  width: 160px;
+  height: 234px;
+  position: absolute;
+  right: 303px;
+  bottom: 63px;
+  background: url("../images/samurai-01.png") no-repeat center;
+
+  -moz-transform: rotate(-2deg);
+  -moz-transform-origin: center bottom;
+  
+  -webkit-transform: rotate(-2deg);
+  -webkit-transform-origin: center bottom;
+  
+  -moz-animation-name: animateLeftSamurai;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+  -webkit-animation-name: animateLeftSamurai;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes animateLeftSamurai {
+  0% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 303px;
+  }
+  50% {
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    right: 313px;
+  }
+  100% {
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    right: 303px;
+  }
+}
+
+@-webkit-keyframes animateLeftSamurai {
+  0% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 303px;
+  }
+  50% {
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    right: 313px;
+  }
+  100% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 303px;
+  }
+}
+
+.samurai-02 {
+  width: 167px;
+  height: 252px;
+  position: absolute;
+  right: 50px;
+  bottom: 63px;
+  background: url("../images/samurai-02.png") no-repeat center;
+
+  -moz-transform: rotate(-2deg);
+  -moz-transform-origin: center;
+  
+  -webkit-transform: rotate(-2deg);
+  -webkit-transform-origin: center;
+  
+  -moz-animation-name: animateRightSamurai;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+  -webkit-animation-name: animateRightSamurai;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes animateRightSamurai {
+  0% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 50px;
+  }
+  50% {
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    right: 40px;
+  }
+  100% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 50px;
+  }
+}
+
+@-webkit-keyframes animateRightSamurai {
+  0% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 50px;
+  }
+  50% {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    right: 20px;
+  }
+  100% {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    right: 50px;
+  }
+}
+
+.samurai-arm-01 {
+  width: 166px;
+  height: 103px;
+  position: absolute;
+  left: 43px;
+  top: -30px;
+  background: url("../images/samurai-arm-01.png") no-repeat center;
+
+  -moz-transform: rotate(10deg);
+  -moz-transform-origin: left bottom;
+  
+  -webkit-transform: rotate(10deg);
+  -webkit-transform-origin: left bottom;
+  
+  -moz-animation-name: animateLeftSamuraiArm;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+  -webkit-animation-name: animateLeftSamuraiArm;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes animateLeftSamuraiArm {
+  0% {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  50% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  100% {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes animateLeftSamuraiArm {
+  0% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+.samurai-arm-02 {
+  width: 171px;
+  height: 134px;
+  position: absolute;
+  left: -112px;
+  top: -17px;
+  background: url("../images/samurai-arm-02.png") no-repeat center;
+
+  -moz-transform: rotate(-10deg);
+  -moz-transform-origin: right bottom;
+  
+  -webkit-transform: rotate(-10deg);
+  -webkit-transform-origin: right bottom;
+  
+  -moz-animation-name: animateRightSamuraiArm;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  
+  -webkit-animation-name: animateRightSamuraiArm;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-moz-keyframes animateRightSamuraiArm {
+  0% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes animateRightSamuraiArm {
+  0% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+.the-speakers {
+  padding-top: 80px;
+  background: #fff url("../images/speakers-bg.png") no-repeat center top;
+}
+
+.speakers-lit {
+  padding-top: 30px;
+}
+
+.speaker-item {
+  width: 25%;
+  padding: 30px 10px;
+  cursor: pointer;
+}
+
+.speaker-text {
+  padding: 10px 15px;
+  margin-top: 20px;
+  color: #fefefe;
+  background: #292929;
+}
+
+.speaker-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in;
+  -webkit-filter: grayscale(100%);
+  transition: all 0.2s ease-in;
+  filter: grayscale(100%);
+}
+
+.speaker-image:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.speaker-image img {
+  width: 100%;
+}
+
+.vote {
+  background: #f5f5f5 url("../images/lake-bg.png") no-repeat right bottom;
+}
+
+.vote .left-col {
+  max-width: 480px;
+}
+
+.suggestion-box {
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border-left: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+.field-label {
+  padding-right: 10px;
+  font-family: "zurich";
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.suggestion-box .field {
+  width: 300px;
+  height: 18px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.label-radio {
+  padding: 12px 12px 12px 45px;
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.label-radio:hover {
+  color: #6d6d6d;
+}
+
+.label-radio:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px; 
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 0 rgba(0,0,0,0.1);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.label-radio:after {
+  content: "";
+  display: none;
+  width: 38px;
+  height: 38px;
+  margin-top: -35px; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background: url("../images/radio-checked.png") no-repeat center;
+  cursor: pointer;
+}
+
+.radio:checked + .label-radio {
+  color: #ffa800;
+}
+
+.radio:checked + .label-radio:after {
+  display: block;
+}
+
+.next-dojo {
+  background: #fff url("../images/sun-rise-bg.png") no-repeat right top;
+}
+
+.dojo-list {
+  background: rgba(255,255,255,0.2);
+}
+
+.dojo-list-item {
+  margin-top: 20px; 
+  position: relative;
+  font-family: "zurich";
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.dojo-list-item:first-child {
+  margin: 0;
+}
+
+.dojo-date {
+  width: 65px;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: #ffa800;
+}
+
+.dojo-name {
+  padding: 10px 10px 10px 78px;
+  border-bottom: 1px solid #292929;
+}
+
+.main-footer {
+  padding: 50px 10px;
+  position: relative;
+  background: #2d2d2d;
+}
+
+.main-footer:before, .main-footer:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.main-footer:before {
+  width: 376px;
+  height: 261px;
+  left: 0;
+  background: url("../images/left-footer-tree.png") no-repeat center;
+}
+
+.main-footer:after {
+  width: 359px;
+  height: 271px;
+  right: 0;
+  background: url("../images/right-footer-tree.png") no-repeat center;
+}
+
+.header-04 {
+  font-family: "zurich";
+  font-size: 96px;
+  line-height: 96px;
+  color: #fff;
+}
+
+@media screen and (orientation: portrait) {
+  .html-container {
+    background-size: auto 100%;
+  }
+}
